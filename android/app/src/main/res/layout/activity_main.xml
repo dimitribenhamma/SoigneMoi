@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textSize="26sp" />
+
+        <ImageView
+            style="@style/Toolbar"
+            android:id="@+id/logo_soigne_moi"
+            android:layout_margin="4dp"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:importantForAccessibility="no"
+            android:layout_gravity="start"
+            android:scaleType="centerCrop"
+            android:src="@drawable/soigne_moi"
+            android:contentDescription="@string/title_description" />
+
+        <ImageButton
+            android:id="@+id/dropdown_menu"
+            style="@style/Toolbar"
+            android:layout_width="28dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu" />
+    </FrameLayout>
+
+    <LinearLayout
+        style="@style/Body"
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorBackgroundButton">
+
+        <TextView
+            android:id="@+id/sub_menu_item4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="15px"
+            android:gravity="center"
+            android:text="@string/cadre_app"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        >
+
+        <TextView
+            android:id="@+id/id_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="@string/id"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="26dp" />
+        <TextView
+            android:id="@+id/nom_utilisateur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/user_name"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:label="@string/user_name"
+            android:hint="@string/user_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/mot_de_passe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:layout_alignParentTop="true"
+            android:text="@string/user_password"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:hint="@string/user_password"
+            android:inputType="textEmailAddress"
+            android:label="@string/user_password"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/mot_de_passe_oublie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_alignParentTop="true"
+            android:text="@string/forgot_password"
+            android:textColor="@color/violet"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            />
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button_valider"
+            android:onClick="onViewCreated"
+            android:background="@color/colorBackgroundButton"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>

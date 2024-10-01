@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Soigne Moi</string>
+	<string name="title">Soigne Moi</string>
+	<string name="title_description">Hôpital : Soigne Moi</string>
+	<string name="menu_item1">Connexion</string>
+	<string name="menu_item2">Deconnexion</string>
+	<string name="button_item1">Voir plus</string>
+	<string name="button_item2">Je consulte</string>
+	<string name="button_item3">Me renseigner</string>
+	<string name="button_valider">Valider</string>
+	<string name="button_ok">OK</string>
+	<string name="button_annuler">Annuler</string>
+	<string name="cadre_app">Personnel hôspitalier</string>
+	<string name="id">Renseignez votre identifiant</string>
+	<string name="user_name">Nom utilisateur</string>
+	<string name="user_email">adresse e-mail</string>
+	<string name="user_password">Mot de passe</string>
+	<string name="forgot_password">Mot de passe oublié ?</string>
+
+
+
+	<string-array name="main_menu">
+		<item>@string/menu_item1</item>
+		<item>@string/menu_item2</item>
+	</string-array>
+
+	<string-array name="button_item">
+		<item>@string/button_item1</item>
+		<item>@string/button_item2</item>
+		<item>@string/button_item3</item>
+	</string-array>
+
+	<string-array name="menu_button">
+		<item>@string/button_valider</item>
+		<item>@string/button_ok</item>
+		<item>@string/button_annuler</item>
+	</string-array>
+
+</resources>

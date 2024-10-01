@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/button_item1"
+        android:title="@string/button_item1"
+        android:icon="@drawable/icone_utilisateur_miniature"
+        android:showAsAction="withText"
+        />
+    <item android:id="@+id/button_item2"
+        android:icon="@drawable/icone_utilisateur_miniature"
+        android:title="@string/button_item2"
+        android:showAsAction="withText"
+        />
+</menu>
